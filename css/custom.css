@@ -80,10 +80,15 @@ video#bgvid {
     min-height: 50px;
     background-color: black;
     color: white;
+    padding: 5px 5px;
 }
 
 .footer a{
     color: white;
+}
+
+.social-media-icons a {
+    padding: 0px 5px 0px 5px;
 }
 video#bgvid {
     transition: 1s opacity;
