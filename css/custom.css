@@ -1,53 +1,79 @@
-.footer{
-    position: relative;
-    min-height: 100px;
-    background-color: black;
-}
-.footer-content{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-.footer-content-color{
-    color: white;
-}
-.social-media-icons ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+body, html {
+  height: 100%;
 }
 
-.social-media-icons a {	
-	display: inline-block;
-	text-decoration: none;
-	padding: 7px;
+#videoDiv {
+    height: 100%;
+    min-height: 100%;
 }
-.fa-google-plus-square {
-	color: #CF3D2E;
+#bgvid { 
+    height: 100%;
+    min-height: 100%;
 }
-.fa-twitter-square {
-	color: #4099FF;
+
+#pauseDiv {
+    bottom: 150px;
 }
-.fa-youtube-square {
-	color: #b31217;
+video { 
+    display: block; 
 }
-.fa-rss-square {
-	color: #FF6600;
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
 }
-.social-media-icons ul a i:hover{
-	color: white;
+
+.btn-transparent {
+    background-color: transparent;
+    /*color: inherit;*/
+    transition: all .5s;
 }
-.fa-linkedin-square{
-    color:#0085AE;
+
+.btn-default.btn-transparent  {
+    color: #F2F2F2;
 }
-.fa-github-square{
-    color:white;
+
+.btn-default.btn-transparent:hover {
+    color: black;
+     border-color: #E6E6E6;
 }
-.fa-instagram{
-    color:#A1755C;
+
+.btn-default.btn-transparent:focus {
+    color: black;
 }
-.fa-facebook-square{
-    color:#3C599F;
+
+.footer{
+    position: relative;
+    min-height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer a{
+    color: white;
+}
+video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; }
+ 
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(polina.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }
