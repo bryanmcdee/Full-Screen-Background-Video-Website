@@ -44,30 +44,57 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="#"><i class="fa fa-pause-circle-o fa-lg" aria-hidden="true"></i></a></li>
       </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
   </nav>
+  
   <!-- Video Container -->
-  <div id="videoDiv" class="container">
-    <div class="col-md-12 text-center">
-      <video autoplay loop poster="img/FireBreathingDragon1.jpg" id="bgvid">
-        <source src="video/FireBeathingDragon.webm" type="video/webm">
-        <source src="video/FireBeathingDragon.mp4" type="video/mp4">
-    </video>
+  <div clsas="container">    
+      <div class="video-container">
+        <div id="video-div">
+          <video autoplay loop poster="img/FireBreathingDragon1.jpg" class="fillWidth" id="bgvid">
+            <source src="video/FireBeathingDragon.webm" type="video/webm">
+            <source src="video/FireBeathingDragon.mp4" type="video/mp4">
+        </video>
+      </div>  
     </div>
-  </div>  
-  <!-- / Video Container -->
-  <div class="container">
     <div id="pauseDiv" class="col-xs-12 text-right">
       <button id="vidpause" class="btn btn-default btn-transparent hidden-xs">Pause</button>
     </div>
-  </div>
-  <!-- Footer -->  
-  <div class="container-fluid footer">  
-    <div class-col-xs-12>       
+    </div>
+    <!-- / Video Container -->      
+  <!-- / Containter -->
+  
+  <div class="container-fuid">  
+    <!-- Context -->
+    <div class="col-xs-12 text-center page-content">
+      <div class="col-md-4">
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+      </div>
+      <div class="col-md-4">
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+      </div>
+      <div class="col-md-4">
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+        <p>Sample Text</p>
+      </div>
+    </div>
+    <!-- / Context Section -->    
+    
+    <!-- Footer --> 
+    <div class="col-xs-12 footer">       
       <div class="col-sm-6 text-center">
         <p class="col-sm-8 col-sm-offset-2">
           The background video is of the fire breathing dragon in Diagon Alley at Universal Studios Florida.
@@ -88,8 +115,9 @@
         <p><a href="www.bryanmcdonald.com" target="_blank">Bryan McDonald</a></p>
       </div>
     </div>
+    <!-- / Footer -->
   </div>
-  <!-- / Footer -->
+  <!-- / Containter -->
    
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

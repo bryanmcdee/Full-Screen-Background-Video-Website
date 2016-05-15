@@ -2,6 +2,7 @@ body, html {
   height: 100%;
 }
 
+/*Navbar*/
 .navbar {
     background: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
@@ -23,17 +24,32 @@ body, html {
     font-size: 1.2em;
 } 
  
-#videoDiv {
-    height: 100%;
-    min-height: 100%;
+/*Background Video */
+.video-container {
+  height: 800px;
+  position: relative;
+  padding: 20px;
 }
-#bgvid { 
-    height: 100%;
-    min-height: 100%;
+#video-div {
+	position: absolute;
+}
+#video-div {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
 }
 
 #pauseDiv {
-    bottom: 150px;
+    bottom: 100px;
 }
 video { 
     display: block; 
@@ -56,9 +72,16 @@ video#bgvid {
     background-size: cover; 
 }
 
+video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { 
+    opacity: .5; 
+ }
+
+/*Buttons */
 .btn-transparent {
     background-color: transparent;
-    /*color: inherit;*/
     transition: all .5s;
 }
 
@@ -75,9 +98,15 @@ video#bgvid {
     color: black;
 }
 
-.footer{
-    position: relative;
-    min-height: 50px;
+/*Content*/
+.page-content {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+}
+
+/*Footer*/
+.footer {
     background-color: black;
     color: white;
     padding: 5px 5px;
@@ -87,15 +116,38 @@ video#bgvid {
     color: white;
 }
 
+/*icons*/
 .social-media-icons a {
-    padding: 0px 5px 0px 5px;
+    padding: 0px, 5px, 0px, 5px;
 }
-video#bgvid {
-    transition: 1s opacity;
+
+/*Media Queries*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .video-container {
+        height: 800px;
+    }
 }
-.stopfade { opacity: .5; }
- 
-@media screen and (max-device-width: 800px) {
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .video-container {
+        height: 600px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .video-container {
+        height: 400px;
+    }
+    video#bgvid { 
+        top: 30%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
     html {
          background: url(../img/FireBreathingDragon1.jpg) #000 no-repeat center center fixed;
     }
@@ -103,3 +155,8 @@ video#bgvid {
         display: none;
     }
 }
+
+/* Custom, iPhone Retina */ 
+/*@media only screen and (max-width : 320px) {
+    
+}*/
