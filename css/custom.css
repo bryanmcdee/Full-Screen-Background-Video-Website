@@ -68,7 +68,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../img/FireBreathingDragon1.jpg) no-repeat;
+    background: url(../img/FireBreathingDragon.jpg) no-repeat;
     background-size: cover; 
 }
 
@@ -115,20 +115,32 @@ video#bgvid {
 .page-section2 {
     background-color: #984B43;
     color: white;
-    padding: 5px 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .page-section3 {
-    background-color: #EAC67A;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 5px 5px;
     min-height: 200px;
 }
 
+/* 3 Column Center Styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+}
+
 /*Footer*/
 .footer-top {
-    background-color: #1D2731;
-    color: white;
+    background-color: #EAC67A;
+    color: black;
     padding: 5px 5px;
 }
 
@@ -137,7 +149,7 @@ video#bgvid {
 }
 
 .footer-bottom {
-    background-color: black;
+    background-color: #1D2731;
     color: white;
     padding: 5px 5px;
 }
@@ -148,6 +160,11 @@ video#bgvid {
 /*icons*/
 .social-media-icons a {
     padding: 5px;
+    color: #984B43;
+}
+
+.social-media-icons a:hover {
+    color: black;
 }
 
 /*Media Queries*/
@@ -178,7 +195,7 @@ video#bgvid {
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
     html {
-         background: url(../img/FireBreathingDragon1.jpg) #000 no-repeat center center fixed;
+         background: url(../img/FireBreathingDragon.jpg) #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;
