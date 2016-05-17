@@ -2,6 +2,10 @@ body, html {
   height: 100%;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+}
+
 /*Navbar*/
 .navbar {
     background: rgba(0,0,0,0);
@@ -117,6 +121,10 @@ video#bgvid {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.page-section2 a {
+    color:  #EAC67A;; 
 }
 
 .page-section3 {
