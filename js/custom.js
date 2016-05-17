@@ -1,5 +1,38 @@
 var vid = document.getElementById("bgvid"),
 pauseButton = document.getElementById("vidpause");
+
+$(document).ready(function(){
+    $("#navBarPause").click(function(e){
+        e.preventDefault();
+        playVideoButtonClick();
+    });
+    
+    $("#vidpause").click(function(e){
+        e.preventDefault();
+        playVideoButtonClick();
+    });
+});
+
+var playVideoButtonClick = function(){
+    vid.classList.toggle("stopfade");
+    if (vid.paused)
+       playVideo();
+	else
+        pauseVideo();	
+}
+
+var playVideo = function(){
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+    $("#navBarPause i").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');    
+}
+
+var pauseVideo = function(){
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+    $("#navBarPause i").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
+}
+
 function vidFade() {
     vid.classList.add("stopfade");
 }
@@ -9,13 +42,3 @@ vid.addEventListener('ended', function() {
 	// to capture IE10
 	vidFade();
 });
-pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
-	if (vid.paused) {
-vid.play();
-		pauseButton.innerHTML = "Pause";
-	} else {
-        vid.pause();
-        pauseButton.innerHTML = "Paused";
-	}
-})

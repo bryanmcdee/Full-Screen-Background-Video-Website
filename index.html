@@ -44,52 +44,93 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a id="navBarPause" href="#"><i class="fa fa-pause-circle-o fa-lg" aria-hidden="true"></i></a></li>
       </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
   </nav>
+  
   <!-- Video Container -->
-  <div id="videoDiv" class="container">
-    <div class="col-md-12 text-center">
-      <video autoplay loop poster="img/FireBreathingDragon1.jpg" id="bgvid">
-        <source src="video/FireBeathingDragon.webm" type="video/webm">
-        <source src="video/FireBeathingDragon.mp4" type="video/mp4">
-    </video>
+  <div clsas="container"> 
+    <div class="col-xs-12 text-center header-text">
+      <h2>Full Screen Video Website</h2>
+    </div>   
+      <div class="video-container">
+        <div id="video-div">
+          <video autoplay loop poster="img/FireBreathingDragon.jpg" class="fillWidth" id="bgvid">
+            <source src="video/FireBeathingDragon.webm" type="video/webm">
+            <source src="video/FireBeathingDragon.mp4" type="video/mp4">
+        </video>
+      </div>  
     </div>
-  </div>  
-  <!-- / Video Container -->
-  <div class="container">
     <div id="pauseDiv" class="col-xs-12 text-right">
       <button id="vidpause" class="btn btn-default btn-transparent hidden-xs">Pause</button>
     </div>
-  </div>
-  <!-- Footer -->  
-  <div class="container-fluid footer">  
-    <div class-col-xs-12>       
-      <div class="col-sm-6 text-center">
-        <p class="col-sm-8 col-sm-offset-2">
-          The background video is of the fire breathing dragon in Diagon Alley at Universal Studios Florida.
-        </p>
-        <p class="col-xs-12"><i class="fa fa-youtube fa-2x"></i>
-          <a href="https://www.youtube.com/watch?v=lMHGIBMC_pE" target="_blank"> View the full-size video </a>
-        </p>
+    </div>
+    <!-- / Video Container -->      
+  <!-- / Containter -->
+  
+  <div>  
+    <!-- Context -->
+    <div class="row row-centered page-section1">
+      <div class="col-sm-3 col-centered">
+        <img src="img\Dragon_GringottsBank.JPG" class="img-responsive" alt="Dragon at GringottsBank">
       </div>
-        <div class="col-sm-6 text-center">
-          <ul class="social-media-icons">
+      <div class="col-sm-3 col-centered">
+        <img src="img\GringottsBank.JPG" class="img-responsive" alt="Gringotts Bank">
+      </div>
+      <div class="col-sm-3 col-centered">
+        <img src="img\Hogsmeade.JPG" class="img-responsive" alt="Hogsmeade">
+      </div>
+    </div>
+    <div class="col-xs-12 text-center page-section2">
+      <div class="col-md-3 col-md-offset-1">
+        <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+        <h3>Full screen responsive video background website using CSS and a touch of JavaScript.</h3>
+      </div>
+      <div class="col-md-3">        
+        <i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+        <h3>This webpage was inspired by the tutorial at <a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">The New Code</a>.</h3>
+      </div>
+      <div class="col-md-3">
+        <i class="fa fa-video-camera fa-5x" aria-hidden="true"></i>
+        <h3>The background video is of the fire breathing dragon in Diagon Alley at Universal Studios Florida</h3>
+        <h3 class="col-xs-12"><i class="fa fa-youtube fa-2x"></i>
+          <a href="https://www.youtube.com/watch?v=lMHGIBMC_pE" target="_blank"> View the full-size video </a>
+        </h3>
+      </div>
+    </div>
+    <div class="col-xs-12 text-center page-section3">
+    </div>
+    <!-- / Context Section -->    
+    
+    <!-- Footer --> 
+    <div class="col-xs-12 footer-top">       
+      <div class="col-sm-4 col-sm-offset-2 text-center">
+        <h3>
+          Bryan is a software engineer, licensed real estate appraiser, BBQer, and tough mudder.
+        </h3>
+      </div>
+        <div class="col-sm-4 text-center">
+          <h3>Around the web</h3>
+          <h4 class="social-media-icons">
             <a href="https://www.linkedin.com/in/bryanmcdonaldgt"><i class="fa fa-linkedin fa-lg"></i></a>
             <a href="https://github.com/bryanmcdee"><i class="fa fa-github fa-lg"></i></a>
             <a href="https://plus.google.com/u/0/+BryanMcDonaldgt"><i class="fa fa-google-plus fa-lg"></i></a>
             <a href="https://www.instagram.com/bryanmcdee/"><i class="fa fa-instagram fa-lg"></i></a>
             <a href="https://twitter.com/bryanmcdee"><i class="fa fa-twitter fa-lg"></i></a>
             <a href="http://blog.bryanmcdonald.com/"><i class="fa fa-wordpress fa-lg"></i></a>
-          </ul>
-        <p><a href="www.bryanmcdonald.com" target="_blank">Bryan McDonald</a></p>
+          </h4>
       </div>
     </div>
+    <div class="col-xs-12 text-center footer-bottom"> 
+      <p><a href="www.bryanmcdonald.com" target="_blank">BryanMcDonald.com</a></p>
+    </div>
+    <!-- / Footer -->
   </div>
-  <!-- / Footer -->
+  <!-- / Containter -->
    
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
