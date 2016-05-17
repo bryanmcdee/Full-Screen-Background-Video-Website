@@ -128,10 +128,10 @@ video#bgvid {
 }
 
 .page-section3 {
-    background-color: white;
-    color: black;
-    padding: 5px 5px;
-    min-height: 200px;
+    z-index: 100px;
+    background:  url(../img/Hogwarts-Express.gif) no-repeat center center fixed; 
+    background-size: cover;
+    height: 500px; 
 }
 
 /* 3 Column Center Styles */
