@@ -1,21 +1,13 @@
 var vid = document.getElementById("bgvid"),
 pauseButton = document.getElementById("vidpause");
 
-function vidFade() {
-    vid.classList.add("stopfade");
-}
-vid.addEventListener('ended', function() {
-    // only functional if "loop" is removed 
-     vid.pause();
-	// to capture IE10
-	vidFade();
-});
-pauseButton.addEventListener("click", function() {
-    playVideoButtonClick();  
-})
-
 $(document).ready(function(){
     $("#navBarPause").click(function(e){
+        e.preventDefault();
+        playVideoButtonClick();
+    });
+    
+    $("#vidpause").click(function(e){
         e.preventDefault();
         playVideoButtonClick();
     });
@@ -40,3 +32,13 @@ var pauseVideo = function(){
     pauseButton.innerHTML = "Paused";
     $("#navBarPause i").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
 }
+
+function vidFade() {
+    vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+    // only functional if "loop" is removed 
+     vid.pause();
+	// to capture IE10
+	vidFade();
+});

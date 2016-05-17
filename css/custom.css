@@ -98,24 +98,53 @@ video#bgvid {
     color: black;
 }
 
+/*Header Content*/
+.header-text {
+    color: white;
+    margin-top: 100px;
+}
+
 /*Content*/
-.page-content {
+.page-section1 {
     background-color: white;
     color: black;
     padding: 5px 5px;
+    min-height: 200px;
+}
+
+.page-section2 {
+    background-color: #984B43;
+    color: white;
+    padding: 5px 5px;
+}
+
+.page-section3 {
+    background-color: #EAC67A;
+    color: white;
+    padding: 5px 5px;
+    min-height: 200px;
 }
 
 /*Footer*/
-.footer {
+.footer-top {
+    background-color: #1D2731;
+    color: white;
+    padding: 5px 5px;
+}
+
+.footer-top a{
+    color: white;
+}
+
+.footer-bottom {
     background-color: black;
     color: white;
     padding: 5px 5px;
 }
 
-.footer a{
+.footer-bottom a{
     color: white;
 }
-
 /*icons*/
 .social-media-icons a {
     padding: 5px;
