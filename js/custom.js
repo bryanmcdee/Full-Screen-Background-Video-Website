@@ -1,7 +1,10 @@
-var vid = document.getElementById("bgvid"),
-pauseButton = document.getElementById("vidpause");
+var vid = document.getElementById("bgvid");
+var pauseButton = document.getElementById("vidpause");
+var muteIcon = document.getElementById("bgvid");
 
 $(document).ready(function(){
+    muteIcon.muted = true;
+    
     $("#navBarPause").click(function(e){
         e.preventDefault();
         playVideoButtonClick();
@@ -10,6 +13,11 @@ $(document).ready(function(){
     $("#vidpause").click(function(e){
         e.preventDefault();
         playVideoButtonClick();
+    });
+    
+    $("#navBarMute").click(function(e){
+        e.preventDefault();
+        muteSound();
     });
 });
 
@@ -42,3 +50,13 @@ vid.addEventListener('ended', function() {
 	// to capture IE10
 	vidFade();
 });
+
+var muteSound = function(){
+    if ($('#navBarMute i').hasClass('fa-microphone-slash')){
+        muteIcon.muted = false;
+        $("#navBarMute i").removeClass('fa-microphone-slash').addClass('fa-microphone');
+    } else {
+        muteIcon.muted = true;
+        $("#navBarMute i").removeClass('fa-microphone').addClass('fa-microphone-slash');
+    }
+}

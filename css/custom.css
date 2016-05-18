@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "HarryPotter";
+  src: url('../fonts/harrypotter.TTF') format("truetype");
+}
+
 body, html {
   height: 100%;
+  font-family: Calisto MT, sans-serif
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -10,22 +16,24 @@ body, html {
 .navbar {
     background: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
+    font-size: 1.2;
 }
   
 .navbar-default .navbar-nav>li>a {
     color: white;
+    font-size: 20px;
 } 
 
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 24px;
 } 
  
 .navbar-default .navbar-nav>li>a:focus {
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 24px;
 } 
  
 /*Background Video */
@@ -108,11 +116,14 @@ video#bgvid {
     margin-top: 100px;
 }
 
+.header-text p {
+    font-size: 50px;
+}
+
 /*Content*/
 .page-section1 {
     background-color: white;
     color: black;
-    padding: 5px 5px;
     min-height: 200px;
 }
 
@@ -128,10 +139,17 @@ video#bgvid {
 }
 
 .page-section3 {
+    font-family: HarryPotter, Calisto MT, sans-serif;
+    font-size: 50px;
     z-index: 100px;
     background:  url(../img/Hogwarts-Express.gif) no-repeat center center fixed; 
     background-size: cover;
     height: 500px; 
+    color: white;
+}
+
+.section3-text{
+    padding-top: 150px;
 }
 
 /* 3 Column Center Styles */
@@ -149,7 +167,8 @@ video#bgvid {
 .footer-top {
     background-color: #EAC67A;
     color: black;
-    padding: 5px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer-top a{
@@ -159,7 +178,8 @@ video#bgvid {
 .footer-bottom {
     background-color: #1D2731;
     color: white;
-    padding: 5px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer-bottom a{
