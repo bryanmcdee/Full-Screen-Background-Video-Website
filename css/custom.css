@@ -16,7 +16,7 @@ body, html {
 .navbar {
     background: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
-    font-size: 1.2;
+    font-size: 1.3em;
 }
   
 .navbar-default .navbar-nav>li>a {
@@ -117,7 +117,7 @@ video#bgvid {
 
 .btn-default.btn-filled:hover{
     background-color: #EAC67A;
-    color: white;
+    color: black;
 }
 
 /*Header Content*/
@@ -131,8 +131,7 @@ video#bgvid {
     font-size: 50px;
 }
 
-hr {
-    padding-top: 100px;
+hr {    
     border-color: #984B43;
     border-width: 3px;
     max-width: 50px;
@@ -141,6 +140,10 @@ hr {
     -webkit-margin-after: 0.5em;
     -webkit-margin-start: auto;
     -webkit-margin-end: auto;
+}
+
+.header-hr {
+    padding-top: 100px;
 }
 
 /*Content*/
@@ -173,6 +176,16 @@ hr {
 
 .section3-text{
     padding-top: 150px;
+}
+
+.page-section4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+
+.page-section4 p {
+    font-size: 50px;
 }
 
 /* 3 Column Center Styles */
