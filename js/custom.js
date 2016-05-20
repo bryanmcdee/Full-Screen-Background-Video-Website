@@ -2,6 +2,25 @@ var vid = document.getElementById("bgvid");
 var pauseButton = document.getElementById("vidpause");
 var muteIcon = document.getElementById("bgvid");
 
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+          scrollToElement(target);
+        return false;
+      }
+    }
+  });
+});
+
+var scrollToElement = function(target){
+    $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+}
+
 $(document).ready(function(){
     muteIcon.muted = true;
     
@@ -19,6 +38,17 @@ $(document).ready(function(){
         e.preventDefault();
         muteSound();
     });
+    
+    $('#btnLearnMore').click(function(e){
+        e.preventDefault();
+        scrollToElement($("#about"));        
+    });
+    
+    $('#btnSubmit').click(function(e){
+        e.preventDefault();
+        scrollToElement($("#top"));
+        clearContactForm();
+    });    
 });
 
 var playVideoButtonClick = function(){
@@ -59,4 +89,10 @@ var muteSound = function(){
         muteIcon.muted = true;
         $("#navBarMute i").removeClass('fa-microphone').addClass('fa-microphone-slash');
     }
+}
+
+var clearContactForm = function(){
+    $("#name").val("");
+    $("#emailAddress").val("");
+    $("#message").val("");
 }
