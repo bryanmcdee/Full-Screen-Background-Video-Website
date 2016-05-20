@@ -16,7 +16,7 @@ body, html {
 .navbar {
     background: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
-    font-size: 1.2;
+    font-size: 1.3em;
 }
   
 .navbar-default .navbar-nav>li>a {
@@ -110,14 +110,40 @@ video#bgvid {
     color: black;
 }
 
+.btn-default.btn-filled{
+    background-color: #984B43;
+    color: white;
+}
+
+.btn-default.btn-filled:hover{
+    background-color: #EAC67A;
+    color: black;
+}
+
 /*Header Content*/
 .header-text {
     color: white;
-    margin-top: 100px;
+    margin-top: 150px;
+    z-index: 100;
 }
 
 .header-text p {
     font-size: 50px;
+}
+
+hr {    
+    border-color: #984B43;
+    border-width: 3px;
+    max-width: 50px;
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+}
+
+.header-hr {
+    padding-top: 100px;
 }
 
 /*Content*/
@@ -150,6 +176,16 @@ video#bgvid {
 
 .section3-text{
     padding-top: 150px;
+}
+
+.page-section4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+
+.page-section4 p {
+    font-size: 50px;
 }
 
 /* 3 Column Center Styles */
@@ -218,19 +254,20 @@ video#bgvid {
     video#bgvid { 
         top: 30%;
     }
+    .header-text {
+        margin-top: 25px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    html {
+    /*html {
          background: url(../img/FireBreathingDragon.jpg) #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;
+    }*/
+    .header-text {
+        margin-top: 0px;
     }
 }
-
-/* Custom, iPhone Retina */ 
-/*@media only screen and (max-width : 320px) {
-    
-}*/
