@@ -2,27 +2,9 @@ var vid = document.getElementById("bgvid");
 var pauseButton = document.getElementById("vidpause");
 var muteIcon = document.getElementById("bgvid");
 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-          scrollToElement(target);
-        return false;
-      }
-    }
-  });
-});
-
-var scrollToElement = function(target){
-    $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-}
-
 $(document).ready(function(){
     muteIcon.muted = true;
+    smoothScrolling.init();
     
     $("#navBarPause").click(function(e){
         e.preventDefault();
@@ -41,12 +23,12 @@ $(document).ready(function(){
     
     $('#btnLearnMore').click(function(e){
         e.preventDefault();
-        scrollToElement($("#about"));        
+        smoothScrolling.scrollToElement($("#about"));        
     });
     
     $('#btnSubmit').click(function(e){
         e.preventDefault();
-        scrollToElement($("#top"));
+        smoothScrolling.scrollToElement($("#top"));
         clearContactForm();
     });    
 });
