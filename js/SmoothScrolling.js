@@ -1,6 +1,6 @@
-var smoothScrolling = (function() {
+var smoothScrolling = (function($, undefined) {
 
-    function init() {
+    var init = function() {
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -15,7 +15,7 @@ var smoothScrolling = (function() {
         });
     }
 
-    function scrollToElement(target){
+    var scrollToElement = function(target){
     $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
@@ -25,4 +25,4 @@ var smoothScrolling = (function() {
         init: init,
         scrollToElement: scrollToElement
     }
-}());
+})(jQuery);
