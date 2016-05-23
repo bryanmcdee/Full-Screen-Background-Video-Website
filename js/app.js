@@ -30,16 +30,16 @@ var app = function(){
             smoothScrolling.scrollToElement($("#top"));
             clearContactForm();
         });   
-    }    
-
+    }  
+    
     var playVideoButtonClick = function(){
         vid.classList.toggle("stopfade");
         if (vid.paused)
             playVideo();
         else
-            pauseVideo();	
+            pauseVideo();
     }
-
+    
     var playVideo = function(){
         vid.play();
         pauseButton.innerHTML = "Pause";

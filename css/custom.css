@@ -154,12 +154,13 @@ hr {
     -webkit-margin-end: auto;
 }
 
-.header-hr {
-    padding-top: 100px;
+.header-text p{
+    padding-bottom: 100px;
 }
 
 /*Content*/
 .page-section1 {
+    padding-top:20px;
     background-color: white;
     color: black;
     min-height: 200px;
@@ -277,12 +278,6 @@ hr {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    /*html {
-         background: url(../img/FireBreathingDragon.jpg) #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
-    }*/
     .header-text {
         margin-top: 0px;
     }
