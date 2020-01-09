@@ -1,52 +1,64 @@
 @font-face {
-  font-family: "HarryPotter";
-  src: url('../fonts/harrypotter.TTF') format("truetype");
+  font-family: 'HarryPotter';
+  src: url('../fonts/harrypotter.TTF') format('truetype');
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  font-family: Calisto MT, sans-serif
+  font-family: Calisto MT, sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
 }
 
 hr {
-    border-color: #984B43;
-    border-width: 3px;
-    max-width: 50px;
-    display: block;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
-    -webkit-margin-start: auto;
-    -webkit-margin-end: auto;
+  border-color: #984b43;
+  border-width: 3px;
+  max-width: 50px;
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
 }
 
 /*Navbar*/
 .navbar {
-    background: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    font-size: 1.3em;
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 1.3em;
 }
-  
-.navbar-default .navbar-nav>li>a {
-    color: white;
-    font-size: 20px;
-} 
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-} 
- 
-.navbar-default .navbar-nav>li>a:focus {
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-} 
- 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 /*Background Video */
 .video-container {
   height: 800px;
@@ -54,231 +66,235 @@ hr {
   padding: 20px;
 }
 #video-div {
-	position: absolute;
+  position: absolute;
 }
 #video-div {
-	top:0%;
-	left:0%;
-	height:100%;
-	width:100%;
-	overflow: hidden;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 video {
-	position:absolute;
-	z-index:0;
+  position: absolute;
+  z-index: 0;
 }
 video.fillWidth {
-	width: 100%;
+  width: 100%;
 }
 
 #pauseDiv {
-    bottom: 100px;
+  bottom: 100px;
 }
-video { 
-    display: block; 
-}
-
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(../img/FireBreathingDragon.JPG) no-repeat;
-    background-size: cover; 
+video {
+  display: block;
 }
 
 video#bgvid {
-    transition: 1s opacity;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/FireBreathingDragon.JPG) no-repeat;
+  background-size: cover;
 }
-.stopfade { 
-    opacity: .5; 
- }
+
+video#bgvid {
+  transition: 1s opacity;
+}
+.stopfade {
+  opacity: 0.5;
+}
 
 /*Buttons */
 .btn-transparent {
-    background-color: transparent;
-    transition: all .5s;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
-.btn-default.btn-transparent  {
-    color: #F2F2F2;
+.btn-default.btn-transparent {
+  color: #f2f2f2;
 }
 
 .btn-default.btn-transparent:hover {
-    color: black;
-     border-color: #E6E6E6;
+  color: black;
+  border-color: #e6e6e6;
 }
 
 .btn-default.btn-transparent:focus {
-    color: black;
+  color: black;
 }
 
-.btn-default.btn-filled{
-    background-color: #984B43;
-    color: white;
+.btn-default.btn-filled {
+  background-color: #984b43;
+  color: white;
 }
 
-.btn-default.btn-filled:hover{
-    background-color: #EAC67A;
-    color: black;
+.btn-default.btn-filled:hover {
+  background-color: #eac67a;
+  color: black;
 }
 
 /*Header Content*/
 .header-text {
-    z-index: 100;
-    color: white;
-    margin-top: 150px;
-    z-index: 100;
+  z-index: 100;
+  color: white;
+  margin-top: 150px;
+  z-index: 100;
 }
 
 .header-text p {
-    font-size: 50px;
+  font-size: 50px;
 }
 
-hr {    
-    border-color: #984B43;
-    border-width: 3px;
-    max-width: 50px;
-    display: block;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
-    -webkit-margin-start: auto;
-    -webkit-margin-end: auto;
+hr {
+  border-color: #984b43;
+  border-width: 3px;
+  max-width: 50px;
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
 }
 
-.header-text p{
-    padding-bottom: 100px;
+.header-text p {
+  padding-bottom: 100px;
 }
 
 /*Content*/
 .page-section1 {
-    padding-top:20px;
-    background-color: white;
-    color: black;
-    min-height: 200px;
+  padding-top: 20px;
+  background-color: white;
+  color: black;
+  min-height: 200px;
 }
 
 .page-section2 {
-    background-color: #984B43;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  background-color: #984b43;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .page-section2 a {
-    color:  #EAC67A;; 
+  color: #eac67a;
 }
 
 .page-section3 {
-    font-family: HarryPotter, Calisto MT, sans-serif;
-    font-size: 50px;
-    z-index: 100px;
-    background:  url(../img/Hogwarts-Express.GIF) no-repeat center center fixed; 
-    background-size: cover;
-    height: 500px; 
-    color: white;
+  font-family: HarryPotter, Calisto MT, sans-serif;
+  font-size: 50px;
+  z-index: 100px;
+  background: url(../img/Hogwarts-Express.GIF) no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  color: white;
 }
 
-.section3-text{
-    padding-top: 150px;
+.section3-text {
+  padding-top: 150px;
 }
 
 .page-section4 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 24px;
-    background: url(../img/hogwarts.JPG)  no-repeat center center;
-    background-size: cover; 
-    z-index: 100;
-    color: #984B43;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  background: url(../img/hogwarts.JPG) no-repeat center center;
+  background-size: cover;
+  z-index: 100;
+  color: #984b43;
 }
 
 .page-section4 p {
-    font-size: 50px;
+  font-size: 50px;
+}
+
+.img-center {
+    margin: 0 auto !important;
 }
 
 /* 3 Column Center Styles */
 .row-centered {
-    text-align:center;
+  text-align: center;
 }
 
 .col-centered {
-    display:inline-block;
-    float:none;
-    margin-right:-4px;
+  display: inline-block;
+  float: none;
+  margin-right:-4px;
 }
 
 /*Footer*/
 .footer-top {
-    background-color: #EAC67A;
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #eac67a;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.footer-top a{
-    color: white;
+.footer-top a {
+  color: white;
 }
 
 .footer-bottom {
-    background-color: #1D2731;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #1d2731;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.footer-bottom a{
-    color: white;
+.footer-bottom a {
+  color: white;
 }
 /*icons*/
 .social-media-icons a {
-    padding: 5px;
-    color: #984B43;
+  padding: 5px;
+  color: #984b43;
 }
 
 .social-media-icons a:hover {
-    color: black;
+  color: black;
 }
 
 /*Media Queries*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    .video-container {
-        height: 800px;
-    }
+@media only screen and (max-width: 1200px) {
+  .video-container {
+    height: 800px;
+  }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .video-container {
-        height: 600px;
-    }
+@media only screen and (max-width: 992px) {
+  .video-container {
+    height: 600px;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .video-container {
-        height: 400px;
-    }
-    video#bgvid { 
-        top: 30%;
-    }
-    .header-text {
-        margin-top: 25px;
-    }
+@media only screen and (max-width: 768px) {
+  .video-container {
+    height: 400px;
+  }
+  video#bgvid {
+    top: 30%;
+  }
+  .header-text {
+    margin-top: 25px;
+  }
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-    .header-text {
-        margin-top: 0px;
-    }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header-text {
+    margin-top: 0px;
+  }
 }
